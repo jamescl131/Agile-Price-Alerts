@@ -16,5 +16,8 @@ Set up a crontab by typing crontab -e and pasting the following
 
 00 17 * * * root <path>/agile-price-alerts.py
 
-Please note: the script won't send you an email if there's nothing below the set threshold. 
+Please note: 
+* The script won't send you an email if there's nothing below the set threshold.
+* The script only lists 30-min blocks where prices are below your threshold
+
 This means you could say you're only insterested in alerts at 5 pence or below and you'll only get alerts on days when the prices are at or below the threshold. 
