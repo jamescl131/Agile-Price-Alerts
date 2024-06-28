@@ -1,4 +1,5 @@
-This script should be scheduled on a crontab for around 5PM each day. Octopus make the current evening and next day's prices available shortly after 4PM each day. 
+This script should be scheduled on a crontab for around 5PM each day, I run this locally from a Raspberry Pi. 
+Octopus make the current evening and next day's prices available shortly after 4PM each day. 
 
 To use this script you need to choose/add the following. 
 
@@ -21,3 +22,5 @@ Please note:
 * The script only lists 30-min blocks where prices are below your threshold
 
 This means you could say you're only insterested in alerts at 5 pence or below and you'll only get alerts on days when the prices are at or below the threshold. 
+
+Some ISPs may restrict the sending of SMTP email, in this case you might need to run it from elsewhere. 
