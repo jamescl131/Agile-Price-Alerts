@@ -13,7 +13,8 @@ This is necessary if you have 2FA on your gmail account, if not you may be able 
 Set the from and to address where you would like the emails to be sent from and to. 
 
 Set up a crontab by typing crontab -e and pasting the following
-00 17 * * * root <path to script>/agile-price-alerts.py
+
+00 17 * * * root <path>/agile-price-alerts.py
 
 Please note: the script won't send you an email if there's nothing below the set threshold. 
 This means you could say you're only insterested in alerts at 5 pence or below and you'll only get alerts on days when the prices are at or below the threshold. 
